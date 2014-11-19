@@ -13,7 +13,7 @@
             },
             this.options = $.extend({}, this.defaults, opt)
     }
-    //定义Beautifier的方法
+    //定义dialog的方法
     Dialog.prototype = {
         initDialog: function () {
             var overlay = $('<div id="overlay" class="dui-dialog-shd"></div>');
