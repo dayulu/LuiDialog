@@ -1,6 +1,6 @@
 ;
 (function () {
-    //定义Beautifier的构造函数
+    //定义dialog的构造函数
     var Dialog = function (ele, opt) {
         this.$element = ele,
             this.defaults = {
@@ -33,8 +33,7 @@
                 dia.colseDialog();
             });
             container.css({ "height": height + "px", "width": width + "px"});
-            dialog.append(container);
-            //克隆dom不克隆事件和数据
+            dialog.append(container);            
             data = this.$element.data('dialog');
             if (!data) {
                 this.$element.data('dialog', {src: this.$element.clone()})
